@@ -1,0 +1,21 @@
+[project]
+name = "gang-of-four-design-patterns"
+version = "0.1.0"
+description = "All 23 GoF design patterns and the SOLID principles with real-world Python examples"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
